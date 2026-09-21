@@ -26,11 +26,15 @@ def dotProduct(list1, list2):
 	return output
 
 def transpose(array):
-	#(1,n) -> (n,1) and vice versa
-	transposed = []
-	if len(array) == 1:
-		for x in array[0]:
-			transposed.append([x])
+	rows = len(array)
+	columns = len(array[0])
+	transposed = [[None] * rows for _ in range(columns)]
+
+	for i, row in enumerate(array):
+		for j, value in enumerate(row):
+			transposed[j][i] = array[i][j]		
+
 	return transposed
 
-print(transpose([a]))
+print(transpose(matrixB)
+)
