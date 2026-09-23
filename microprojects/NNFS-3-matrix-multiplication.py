@@ -36,5 +36,23 @@ def transpose(array):
 
 	return transposed
 
-print(transpose(matrixB)
-)
+
+def matrixMulitply(matrix1, matrix2):
+	if len(matrix1[0]) != len(matrix2): 
+		return 
+
+	resultMatrix = []
+
+	for row in matrix1:
+		resultRow = []
+
+		for column in transpose(matrix2):
+			value = dotProduct(row, column)
+			resultRow.append(value)
+
+		resultMatrix.append(resultRow)	
+
+	return resultMatrix
+
+
+print(matrixMulitply(matrixA, matrixB))
