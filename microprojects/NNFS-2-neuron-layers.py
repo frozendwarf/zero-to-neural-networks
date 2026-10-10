@@ -1,5 +1,14 @@
 #NNFS-2
+#This is an example of a neuron layer, the dot product is applied for each output
+#Essentially, it's a vector of inputs, matrix of weights and vector of outputs
+
 # 4 inputs, 3 output neurons
+
+#It looks something like this:
+# O -
+# O - O
+# O - O
+# O - O
 
 import numpy as np
 
@@ -26,8 +35,5 @@ print(outputs)
 
 print(np.dot(weights, inputs) + biases)
 
-
-# O -
-# O - O
-# O - O
-# O - O
+#Both results, the standard python and numpy should give the same result,
+#it just shows what's going on under the hood for np.dot

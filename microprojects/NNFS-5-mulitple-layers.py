@@ -1,3 +1,12 @@
+#NNF-5
+#Very rudimentary, but essentially it mimics 2 layer
+#a bit like this:
+# O - 
+# O - O - O
+# O - O - O
+# O - O - O
+
+
 import numpy as np
 
 inputs = [

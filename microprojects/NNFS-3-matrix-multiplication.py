@@ -1,4 +1,11 @@
 #NNFS-3 Matrix Multiplcation
+#More ambitious microproject, essentially this preforms the math of matrix multiplication
+#FROM RAW PYTHON
+
+#It uses the dot product idea from earlier, each row*column (weight*bias)
+#columns are hard in programming, so we tranpose into rows
+#two rows are just vectors so we use the same dot product function
+
 
 matrixA = [
 	[1, 2, 3],
